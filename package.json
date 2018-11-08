@@ -1,0 +1,29 @@
+{
+  "name": "testq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "start:server": "nodemon ./server/server.js",
+    "start:client": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magestican/testq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magestican/testq/issues"
+  },
+  "homepage": "https://github.com/magestican/testq#readme",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "nodemon": "^1.18.6"
+  }
+}
