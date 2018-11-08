@@ -23,7 +23,7 @@ export default class FaqPage extends Component {
         <Card.Group>
           {
             faqs.map((o, i) => {
-              return <Card color='yellow' key={`faq${i}`}>
+              return <Card color='red' key={`faq${i}`}>
                 <Card.Content>
                   <Card.Header content={o.title} />
                   <Card.Meta content={`Question ${i}`} />

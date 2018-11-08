@@ -43,4 +43,4 @@ export const launchApp = (renderFun = render, mountNode, AppToRender = App) => {
   }
 }
 
-launchApp();
+

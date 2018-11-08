@@ -7,12 +7,11 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 
 let webpackSettings = {
-  entry: './app/app.js',
+  entry: './app/root.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[hash].js'
   },
-
   plugins: [
     extractCSS,
     new HtmlWebpackPlugin({

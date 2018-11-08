@@ -16,6 +16,8 @@ npm test
 
 npm start
 
+And visit : https://localhost:8080/
+
 # BACKEND
 
 Navigate to the server folder to work with the backend
@@ -32,7 +34,7 @@ npm test
 
 npm start
 
-
+The graphiql interface is in : http://localhost:4000/graphql
 
 # Notes :
 
