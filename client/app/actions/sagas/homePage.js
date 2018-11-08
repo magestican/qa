@@ -6,9 +6,12 @@ import { GET_HOME_PAGE_DATA, GOT_HOME_PAGE_DATA } from '../homePage';
 export let getHomePageDataApi = () => {
   return fetch(`${apiEndpoint}/`, {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
     body: JSON.stringify({
-      query: `
-      {
+      query: `{
         homepage {
           heading
           subheading

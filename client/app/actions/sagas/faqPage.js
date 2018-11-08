@@ -6,9 +6,12 @@ import { GET_FAQ_PAGE_DATA, GOT_FAQ_PAGE_DATA } from '../faqPage';
 export let getFaqPageDataApi = () => {
   return fetch(`${apiEndpoint}/`, {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
     body: JSON.stringify({
-      query: `
-      {
+      query: `{
         faqs {
           body
           title
