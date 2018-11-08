@@ -1,13 +1,13 @@
 const express = require('express');
 const express_graphql = require('express-graphql');
-const { root } = require('./model/graphlQlRoot');
-const { schema } = require('./model/graphlQlSchema');
+const { GraphlQlRoot } = require('./model/graphlQlRoot');
+const { GraphlQlSchema } = require('./model/graphlQlSchema');
 const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use('/graphql', express_graphql({
-    schema: schema,
-    rootValue: root,
+    schema: GraphlQlSchema,
+    rootValue: GraphlQlRoot,
     graphiql: true
 }));
 

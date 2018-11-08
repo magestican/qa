@@ -1,9 +1,13 @@
 export const homePageInitialState = {
     loadingHomePageData: false,
-    homePageData: {}
+    homePageData: {
+        homepage: {}
+    }
 }
 export const faqPageInitialState = {
-    faqPageData: {},
+    faqPageData: {
+        faqs: []
+    },
     loadingFaqPageData: false
 }
 

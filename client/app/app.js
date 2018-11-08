@@ -12,6 +12,7 @@ import { Router} from "react-router-dom";
 import createHistory from 'history/createBrowserHistory';
 import App from './containers/app'
 import 'semantic-ui-css/semantic.min.css';
+import './style/main.scss'
 const history = createHistory();
 let store = configureStore(initialState, history);
 

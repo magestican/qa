@@ -20,7 +20,7 @@ export let getFaqPageDataApi = () => {
     ` })
   }).then((response) => {
     return response.json().then((result) => {
-      return result;
+      return result.data;
     })
   }).catch(error => {
     console.error(error);
@@ -30,7 +30,7 @@ export let getFaqPageDataApi = () => {
 
 export function* loadGetFaqPageData() {
   try {
-    const data = yield call(getHomePageDataApi);
+    const data = yield call(getFaqPageDataApi);
     yield put({ type: GOT_FAQ_PAGE_DATA, data });
   } catch (error) {
     throw error;

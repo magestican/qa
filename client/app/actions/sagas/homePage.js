@@ -21,7 +21,7 @@ export let getHomePageDataApi = () => {
     ` })
   }).then((response) => {
     return response.json().then((result) => {
-      return result;
+      return result.data;
     })
   }).catch(error => {
     console.error(error);

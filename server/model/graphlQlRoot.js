@@ -1,9 +1,9 @@
 const { faqs, homepage } = require('../db/cmsData.json');
-var root = {
+var GraphlQlRoot = {
     homepage: () => homepage,
     faqs: () => faqs
 };
 
 module.exports = {
-    root
+    GraphlQlRoot
 }

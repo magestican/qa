@@ -1,0 +1,16 @@
+@import './pages/faq';
+@import './pages/home';
+
+.app-container {
+    max-width:900px;
+    margin: auto;
+    text-align: center;
+
+    .ui.footer.segment {
+        position: fixed;
+        max-width: 900px;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}

@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import PAGES_ENUM from '../../helpers/constants/pagesEnum';
 import { Menu } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 export default class TopMenu extends Component {
   constructor(props) {
     super(props);
-  }
-
-  goToHome = () => {
-    window.location.replace('/')
-  }
-
-  goToFaq = () => {
-    window.location.replace('/faqs')
   }
 
   getCurrentPage = () => {
@@ -20,17 +13,19 @@ export default class TopMenu extends Component {
   }
 
   render() {
-    return <Menu pointing>
+    return <Menu pointing secondary>
       <Menu.Item
         name='Home'
         active={this.getCurrentPage() === PAGES_ENUM.HOME}
-        onClick={this.goToHome}
-      />
+      >
+        <Link to="/">Home</Link>
+      </Menu.Item>
       <Menu.Item
         name='Faqs'
         active={this.getCurrentPage() === PAGES_ENUM.FAQ}
-        onClick={this.goToFaq}
-      />
+      >
+        <Link to="/faqs">Faqs</Link>
+      </Menu.Item>
     </Menu>
   }
 }
